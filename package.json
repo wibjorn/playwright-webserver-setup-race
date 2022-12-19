@@ -1,0 +1,30 @@
+{
+  "name": "playwright-webserver-setup-race",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wait.js",
+  "dependencies": {
+    "playwright-core": "^1.29.0",
+    "@playwright/test": "^1.29.0"
+  },
+  "scripts": {
+    "test": "playwright test --config=test.config.ts",
+    "wait": "node \"./wait.js\"",
+    "start": "parcel index.html --port 3000",
+    "wait-n-start": "npm run wait && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wibjorn/playwright-webserver-setup-race.git"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wibjorn/playwright-webserver-setup-race/issues"
+  },
+  "homepage": "https://github.com/wibjorn/playwright-webserver-setup-race#readme"
+}
