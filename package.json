@@ -4,14 +4,16 @@
   "description": "",
   "main": "wait.js",
   "dependencies": {
-    "playwright-core": "^1.29.0",
-    "@playwright/test": "^1.29.0"
+    "@playwright/test": "^1.29.0",
+    "execa": "^5.1.0",
+    "playwright-core": "^1.29.0"
   },
   "scripts": {
     "test": "playwright test --config=test.config.ts",
     "wait": "node \"./wait.js\"",
     "start": "parcel index.html --port 3000",
-    "wait-n-start": "npm run wait && npm run start"
+    "wait-n-start": "npm run wait && npm run start",
+    "wait-n-start-with-child": "node via-child-process.js"
   },
   "repository": {
     "type": "git",

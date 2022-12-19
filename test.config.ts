@@ -69,7 +69,7 @@ const config: PlaywrightTestConfig = {
     ignoreHTTPSErrors: true,
     reuseExistingServer: !process.env.CI,
     cwd: ".",
-    command: "npm run wait-n-start",
+    command: "npm run wait-n-start-with-child",
     timeout: 300 * 1000,
     port: 3000,
   },
